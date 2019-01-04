@@ -1,5 +1,6 @@
 package com.example.cristiancamps.diveenjoy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,17 +12,27 @@ public class GalleryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
     }
-    //Botones del menú
-    public void onMain(View view) {
-        finish();
-    }
-    public void onBookin(View view) {
-        finish();
-    }
-    public void onCalendar(View view) {
-        finish();
-    }
-    public void onSquad(View view) {
-        finish();
+    //Botones del menú:
+
+    public void onClick (View view){
+        Intent miIntent = null;
+        switch (view.getId()){
+
+            case R.id.squadbtn:
+                miIntent = new Intent(GalleryActivity.this, SquadActivity.class);
+                break;
+            case R.id.mainbtn:
+                miIntent = new Intent(GalleryActivity.this, MainActivity.class);
+                break;
+            case R.id.calendarbtn:
+                miIntent = new Intent(GalleryActivity.this, CalendarioActivity.class);
+                break;
+            case R.id.bookbtn:
+                miIntent = new Intent(GalleryActivity.this, BookinActivity.class);
+                break;
+
+        }
+        startActivity(miIntent);
+
     }
 }

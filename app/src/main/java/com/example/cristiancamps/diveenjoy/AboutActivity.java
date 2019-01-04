@@ -1,5 +1,6 @@
 package com.example.cristiancamps.diveenjoy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,8 @@ public class AboutActivity extends AppCompatActivity {
 
     //Boton de Back
     public void onBack(View view) {
-        finish();
+        Intent miIntent = new Intent(AboutActivity.this, MainActivity.class);
+        startActivity(miIntent);
     }
 
 }

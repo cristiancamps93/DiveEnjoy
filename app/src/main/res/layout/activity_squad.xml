@@ -70,10 +70,11 @@
         app:layout_constraintGuide_percent="0.8" />
 
     <ImageButton
-        android:id="@+id/calendarbtn5"
+        android:id="@+id/calendarbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline30"
@@ -82,7 +83,7 @@
         app:srcCompat="@drawable/calendario" />
 
     <ImageButton
-        android:id="@+id/squadbtn5"
+        android:id="@+id/squadbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
@@ -94,10 +95,11 @@
         app:srcCompat="@drawable/squad" />
 
     <ImageButton
-        android:id="@+id/bookbtn5"
+        android:id="@+id/bookbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,10 +108,11 @@
         app:srcCompat="@drawable/bloc" />
 
     <ImageButton
-        android:id="@+id/imgbtn5"
+        android:id="@+id/imgbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline28"
@@ -118,10 +121,11 @@
         app:srcCompat="@drawable/camara" />
 
     <ImageButton
-        android:id="@+id/mainbtn5"
+        android:id="@+id/mainbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/menuback2"
         app:layout_constraintEnd_toStartOf="@+id/guideline29"

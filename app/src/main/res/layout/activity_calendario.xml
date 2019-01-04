@@ -70,11 +70,11 @@
         app:layout_constraintGuide_percent="0.8" />
 
     <ImageButton
-        android:id="@+id/imgbtn4"
+        android:id="@+id/imgbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onImage"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/menuback4"
         app:layout_constraintEnd_toStartOf="@+id/guideline16"
@@ -83,11 +83,11 @@
         app:srcCompat="@drawable/camara" />
 
     <ImageButton
-        android:id="@+id/bookbtn4"
+        android:id="@+id/bookbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onBookin"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,20 +96,20 @@
         app:srcCompat="@drawable/bloc" />
 
     <ImageButton
-        android:id="@+id/mainbtn4"
+        android:id="@+id/mainbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onMain"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/selecmenu4"
-        app:layout_constraintStart_toEndOf="@+id/imgbtn4"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn"
         app:layout_constraintTop_toTopOf="@+id/menuback4"
         app:srcCompat="@drawable/delfin" />
 
     <ImageButton
-        android:id="@+id/calendarbtn4"
+        android:id="@+id/calendarbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
@@ -121,11 +121,11 @@
         app:srcCompat="@drawable/calendario" />
 
     <ImageButton
-        android:id="@+id/squadbtn2"
+        android:id="@+id/squadbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onSquad"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"

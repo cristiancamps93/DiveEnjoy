@@ -71,11 +71,11 @@
         app:layout_constraintGuide_percent="0.8" />
 
     <ImageButton
-        android:id="@+id/calendarbtn2"
+        android:id="@+id/calendarbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onCalendar"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline24"
@@ -84,11 +84,11 @@
         app:srcCompat="@drawable/calendario" />
 
     <ImageButton
-        android:id="@+id/imgbtn2"
+        android:id="@+id/imgbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onImage"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/menuback5"
         app:layout_constraintEnd_toStartOf="@+id/guideline22"
@@ -97,11 +97,11 @@
         app:srcCompat="@drawable/camara" />
 
     <ImageButton
-        android:id="@+id/squadbtn4"
+        android:id="@+id/squadbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onSquad"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
@@ -110,11 +110,11 @@
         app:srcCompat="@drawable/squad" />
 
     <ImageButton
-        android:id="@+id/mainbtn2"
+        android:id="@+id/mainbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onMain"
+        android:onClick="onClick"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline23"
@@ -123,7 +123,7 @@
         app:srcCompat="@drawable/delfin" />
 
     <ImageButton
-        android:id="@+id/bookbtn2"
+        android:id="@+id/bookbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
