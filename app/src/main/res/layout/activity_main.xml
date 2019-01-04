@@ -56,6 +56,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onSquad"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/txtsquad"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
@@ -68,6 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onImage"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/txtimg2"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
@@ -92,6 +94,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onCalendar"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/txtcal"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
@@ -104,6 +107,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:onClick="onBookin"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/txtbook"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,28 +120,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="77dp" />
+        app:layout_constraintGuide_percent="0.2" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="154dp" />
+        app:layout_constraintGuide_percent="0.4" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="231dp" />
+        app:layout_constraintGuide_percent="0.6" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="307dp" />
+        app:layout_constraintGuide_percent="0.8" />
 
     <TextView
         android:id="@+id/txtbook"
@@ -208,10 +212,11 @@
         android:id="@+id/aboutbtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
+        android:onClick="onAbout"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -224,50 +229,64 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.82" />
 
-    <ImageView
-        android:id="@+id/fbbtn"
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/squadbtn"
+        android:onClick="onFacebook"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline31"
-        app:srcCompat="@drawable/facebook" />
+        app:srcCompat="@drawable/facebook"
+        tools:background="@android:color/transparent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgbtn"
+        android:background="@android:color/transparent"
+        android:onClick="onInstagram"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline31"
         app:srcCompat="@drawable/instagram" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/imageButton3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/mainbtn"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline31"
-        app:srcCompat="@drawable/gmail" />
+        app:srcCompat="@drawable/whatsapp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <ImageButton
+        android:id="@+id/imageButton4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        android:background="@android:color/transparent"
+        android:onClick="onGmail"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/calendarbtn"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="@+id/guideline31"
-        app:srcCompat="@drawable/whatsapp" />
+        app:srcCompat="@drawable/gmail" />
 
-    <ImageView
-        android:id="@+id/imageView5"
+    <ImageButton
+        android:id="@+id/imageButton5"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:onClick="onTwitter"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/bookbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
