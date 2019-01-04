@@ -7,14 +7,16 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     //Botones del menú:
-
     public void onClick (View view){
         Intent miIntent = null;
         switch (view.getId()){
@@ -42,21 +44,69 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Botones de redes sociales
-    public void onFacebook(View view) {
-        finish();
+
+    public void onClickRRSS (View view){
+        Intent intent = null;
+        String url = "";
+
+        switch (view.getId()){
+
+            case R.id.fbbtn:
+                url = "http://www.facebook.com/divenjoy.org/";
+                break;
+
+            case R.id.instabtn:
+                url = "https://www.instagram.com/divenjoy_org/";
+                break;
+
+            case R.id.ytbtn:
+                url = "https://www.youtube.com/channel/UCRjZpSXFUThTBVRphpiUuSg";
+                break;
+
+            case R.id.webbtn:
+                url = "http://divenjoy.org/";
+                break;
+
+            case R.id.twitterbtn:
+                url = "https://twitter.com/divenjoy_org";
+                break;
+        }
+        intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url", url);
+        startActivity(intent);
+
+    }
+    /*public void onFacebook(View view) {
+
+        Intent intent = new Intent(this, WebActivity.class);
+        String urlfacebook = "http://www.facebook.com/divenjoy.org/";
+        intent.putExtra("urlfacebook", urlfacebook); //enviamos el valor de la url
+        startActivity(intent);
     }
     public void onInstagram(View view) {
-        finish();
+        Intent intent = new Intent(this, WebActivity.class);
+        String urlfacebook = "https://www.instagram.com/divenjoy_org/";
+        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
+        startActivity(intent);
     }
-    public void onGmail(View view) {
-        finish();
+    public void onYoutube(View view) {
+        Intent intent = new Intent(this, WebActivity.class);
+        String urlfacebook = "https://www.youtube.com/channel/UCRjZpSXFUThTBVRphpiUuSg";
+        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
+        startActivity(intent);
     }
-    public void onWhatssapp(View view) {
-        finish();
+    public void onWeb(View view) {
+        Intent intent = new Intent(this, WebActivity.class);
+        String urlfacebook = "http://divenjoy.org/";
+        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
+        startActivity(intent);
     }
     public void onTwitter(View view) {
-        finish();
-    }
+        Intent intent = new Intent(this, WebActivity.class);
+        String urlfacebook = "https://twitter.com/divenjoy_org";
+        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
+        startActivity(intent);
+    }*/
 
 
 }

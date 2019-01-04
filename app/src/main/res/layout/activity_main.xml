@@ -230,11 +230,11 @@
         app:layout_constraintGuide_percent="0.82" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/fbbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onFacebook"
+        android:onClick="onClickRRSS"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
@@ -243,11 +243,11 @@
         app:srcCompat="@drawable/facebook" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/instabtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onInstagram"
+        android:onClick="onClickRRSS"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
@@ -256,42 +256,42 @@
         app:srcCompat="@drawable/instagram" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/twitterbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
-        android:onClick="onWhatssapp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toTopOf="@+id/guideline31"
-        app:srcCompat="@drawable/whatsapp" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/transparent"
-        android:onClick="onGmail"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/calendarbtn"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/guideline31"
-        app:srcCompat="@drawable/gmail" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/transparent"
-        android:onClick="onTwitter"
+        android:onClick="onClickRRSS"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/bookbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline31"
         app:srcCompat="@drawable/twitter" />
+
+    <ImageButton
+        android:id="@+id/webbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickRRSS"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:srcCompat="@drawable/cromo" />
+
+    <ImageButton
+        android:id="@+id/ytbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickRRSS"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:srcCompat="@drawable/youtube" />
 
 </android.support.constraint.ConstraintLayout>
