@@ -233,14 +233,14 @@
         android:id="@+id/imageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@android:color/transparent"
         android:onClick="onFacebook"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline31"
-        app:srcCompat="@drawable/facebook"
-        tools:background="@android:color/transparent" />
+        app:srcCompat="@drawable/facebook" />
 
     <ImageButton
         android:id="@+id/imageButton2"
