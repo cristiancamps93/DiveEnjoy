@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    //Botones del menú i redes sociales
+    //Botones del menú
     public void onImage(View view) {
         finish();
     }
@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     public void onAbout(View view) {
         finish();
     }
+
+    //Botones de redes sociales
     public void onFacebook(View view) {
         finish();
     }
