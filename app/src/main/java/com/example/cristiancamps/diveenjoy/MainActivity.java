@@ -1,9 +1,11 @@
 package com.example.cristiancamps.diveenjoy;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()){
 
             case R.id.fbbtn:
-                url = "http://www.facebook.com/divenjoy.org/";
+                url = "http://www.facebook.com/divenjoy.org";
                 break;
 
             case R.id.instabtn:
-                url = "https://www.instagram.com/divenjoy_org/";
+                url = "https://www.instagram.com/divenjoy_org";
                 break;
 
             case R.id.ytbtn:
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.webbtn:
-                url = "http://divenjoy.org/";
+                url = "http://divenjoy.org";
                 break;
 
             case R.id.twitterbtn:
@@ -76,37 +78,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-    /*public void onFacebook(View view) {
-
-        Intent intent = new Intent(this, WebActivity.class);
-        String urlfacebook = "http://www.facebook.com/divenjoy.org/";
-        intent.putExtra("urlfacebook", urlfacebook); //enviamos el valor de la url
-        startActivity(intent);
-    }
-    public void onInstagram(View view) {
-        Intent intent = new Intent(this, WebActivity.class);
-        String urlfacebook = "https://www.instagram.com/divenjoy_org/";
-        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
-        startActivity(intent);
-    }
-    public void onYoutube(View view) {
-        Intent intent = new Intent(this, WebActivity.class);
-        String urlfacebook = "https://www.youtube.com/channel/UCRjZpSXFUThTBVRphpiUuSg";
-        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
-        startActivity(intent);
-    }
-    public void onWeb(View view) {
-        Intent intent = new Intent(this, WebActivity.class);
-        String urlfacebook = "http://divenjoy.org/";
-        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
-        startActivity(intent);
-    }
-    public void onTwitter(View view) {
-        Intent intent = new Intent(this, WebActivity.class);
-        String urlfacebook = "https://twitter.com/divenjoy_org";
-        intent.putExtra("url", urlfacebook); //enviamos el valor de la url
-        startActivity(intent);
-    }*/
 
 
 }
