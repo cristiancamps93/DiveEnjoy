@@ -229,6 +229,16 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.82" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/webbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:srcCompat="@android:color/background_light" />
+
     <ImageButton
         android:id="@+id/fbbtn"
         android:layout_width="0dp"
