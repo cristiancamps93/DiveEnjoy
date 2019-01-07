@@ -4,13 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.webkit.WebView;
 
 public class CalendarioActivity extends AppCompatActivity {
+
+    WebView calendar;
+    // correo: buceodisfruta@gmail.com // pass: gCavaliers93
+    String url = "https://calendar.google.com/calendar/embed?src=buceodisfruta%40gmail.com&ctz=Europe%2FMadrid";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendario);
+
+        calendar = findViewById(R.id.calendar);
+        calendar.getSettings().setJavaScriptEnabled(true);
+        calendar.loadUrl(url); //Cargamos Calendario
+
     }
 
     //Botones del menú:
