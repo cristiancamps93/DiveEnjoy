@@ -10,7 +10,11 @@ public class CalendarioActivity extends AppCompatActivity {
 
     WebView calendar;
     // correo: buceodisfruta@gmail.com // pass: gCavaliers93
+    //Link html5
     String url = "https://calendar.google.com/calendar/embed?src=buceodisfruta%40gmail.com&ctz=Europe%2FMadrid";
+    //Link web
+    //String url = "https://calendar.google.com/calendar/r?cid=buceodisfruta@gmail.com&cid=2k5diom7ca01m77voko9arcvf8@group.calendar.google.com";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

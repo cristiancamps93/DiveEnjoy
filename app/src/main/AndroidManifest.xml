@@ -25,6 +25,27 @@
         <activity android:name=".BookinActivity" />
         <activity android:name=".WebActivity" />
         <activity android:name=".EasterEgg"></activity>
+
+        <activity
+            android:name=".ShowGalleryActivity"
+            android:label="Gallery">
+            <intent-filter>
+                <action android:name="android.intent.action.ShowGalleryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SwipeImageActivity"
+            android:label="Imagenes">
+            <intent-filter>
+                <action android:name="android.intent.action.SwipeImageActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>
