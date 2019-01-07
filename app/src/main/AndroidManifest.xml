@@ -23,7 +23,8 @@
         <activity android:name=".GalleryActivity" />
         <activity android:name=".CalendarioActivity" />
         <activity android:name=".BookinActivity" />
-        <activity android:name=".WebActivity"></activity>
+        <activity android:name=".WebActivity" />
+        <activity android:name=".EasterEgg"></activity>
     </application>
 
 </manifest>
