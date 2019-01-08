@@ -13,6 +13,13 @@ public class BookinActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bookin);
     }
 
+
+    public void onReserva (View view){
+        Intent res = new Intent(BookinActivity.this, FakeSending.class);
+        startActivity(res);
+        finish();
+    }
+
     //Botones del menú:
 
     public void onClick (View view){

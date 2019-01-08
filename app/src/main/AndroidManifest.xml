@@ -24,8 +24,7 @@
         <activity android:name=".CalendarioActivity" />
         <activity android:name=".BookinActivity" />
         <activity android:name=".WebActivity" />
-        <activity android:name=".EasterEgg"></activity>
-
+        <activity android:name=".EasterEgg" />
         <activity
             android:name=".ShowGalleryActivity"
             android:label="Gallery">
@@ -44,8 +43,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
+        <activity android:name=".FakeSending"></activity>
     </application>
 
 </manifest>
